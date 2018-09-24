@@ -27,6 +27,10 @@ TODO
 Complete documentation for the Meplato Store 2 REST API can be found at
 [https://developer.meplato.com/store2](https://developer.meplato.com/store2).
 
+## Downloads
+
+* [1.0.3.0.zip](/meplato/store2-abap-client/blob/master/files/1.0.3.0.zip)
+
 ## Testing
 
 TODO
