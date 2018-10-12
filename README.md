@@ -36,10 +36,10 @@ Go to transaction STRUST:
 - Execute (the certificate is displayed at the bottom):  
 ![STRUST Certificate](https://github.com/meplato/store2-abap-client/blob/master/files/STRUST_Certificate.jpg)
 - Add the certificate to the identity "SSL Client (Standard)"\* (Add to certificate list):  
-![STRUST Certificate Add to List](mimes\STRUST_Certificate_Add_to_List.jpg)
+![STRUST Certificate Add to List](https://github.com/meplato/store2-abap-client/blob/master/files/STRUST_Certificate_Add_to_List.jpg)
 - Save.
 
-\* You might as well use any other client identity if it suits your requirements better (see section [Creating a client](https://github.com/meplato/store2-abap-client#Creating-a-client)).
+\* You might as well use any other client identity if it suits your requirements better (see section [Creating a client](https://github.com/meplato/store2-abap-client#creating-a-client)).
 
 
 ## Getting started
@@ -105,7 +105,7 @@ SIMPLE_CLIENT = /WAME/CL_MSA_FACTORY=>CREATE_SIMPLE_CLIENT(
 *             IO_PROXY_SETTINGS = PROXY_SETTINGS "optional
          ).
 ```
-The API token is actually transmitted as user during authentication. If you need to communicate via a proxy, pass on proxy settings. Set an SSL ID, if you wish to use an SSL ID different from the standard SSL client (cf. [Importing the SSL certificate](https://github.com/meplato/store2-abap-client#Importing-the-SSL-certificate)).
+The API token is actually transmitted as user during authentication. If you need to communicate via a proxy, pass on proxy settings. Set an SSL ID, if you wish to use an SSL ID different from the standard SSL client (cf. [Importing the SSL certificate](https://github.com/meplato/store2-abap-client#importing-the-ssl-certificate)).
 
 #### The Destination Client
 
@@ -120,7 +120,7 @@ DESTINATION_CLIENT = /WAME/CL_MSA_FACTORY=>CREATE_DEST_CLIENT(
 In the RFC destination...
 - set the Target Host to [store.meplato.com](store.meplato.com). You might enter proxy settings if required:  
 ![RFC Technical Settings](https://github.com/meplato/store2-abap-client/blob/master/files/RFC_Technical_Settings.jpg)
-- set the User to your API token and activate SSL. A password is currently not required but please set a dummy one (e.g. a single letter) such that the PW Status changed to "saved" (otherwise the user won't be transmitted). You might set the SSL Certificate to another SSL ID than "SSL Client (Standard)" if required (cf. [Importing the SSL certificate](https://github.com/meplato/store2-abap-client#Importing-the-SSL-certificate)):  
+- set the User to your API token and activate SSL. A password is currently not required but please set a dummy one (e.g. a single letter) such that the PW Status changes to "saved" (otherwise the user won't be transmitted). You might set the SSL Certificate to another SSL ID than "SSL Client (Standard)" if required (cf. [Importing the SSL certificate](https://github.com/meplato/store2-abap-client#importing-the-ssl-certificate)):  
 ![RFC Logon Security](https://github.com/meplato/store2-abap-client/blob/master/files/RFC_Logon_Security.jpg)
 - You may enter additional settings according to your wishes. However, please double-check with your Meplato contact if they are supported (especially if you wish to use compression).
 
@@ -208,7 +208,7 @@ After creating the service, we would now like to call service methods like "sear
 
 The data to be sent or received is stored in objects that provide a set of setter and getter methods to set or get the data. These objects thus define the payloads of the request to the service as well as of the response from the service.
 
-Let us assume we wish to crate a product in a catalog: We call the method `CREATE`of the Products Service. The data of the product (the payload) is contained in an object instance implementing interface `/WAME/IF_MSA_CREATEPRODUCT`:
+Let us assume we wish to create a product in a catalog: We call the method `CREATE`of the Products Service. The data of the product (the payload) is contained in an object instance implementing interface `/WAME/IF_MSA_CREATEPRODUCT`:
 ```abap
 DATA CREATEPRODUCT     TYPE REF TO /WAME/IF_MSA_CREATEPRODUCT.
 DATA CREATEPRODUCTRESP TYPE REF TO /WAME/IF_MSA_CREATEPRODUCTRESP.
@@ -279,4 +279,3 @@ This software is licensed under the Apache 2 license.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-
