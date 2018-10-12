@@ -29,12 +29,12 @@ The API services are addressed via https. Your SAP systems needs to trust the SS
 Go to transaction STRUST:
 - Certificate
 - Import:  
-![STRUST Certificate Import](/meplato/store2-abap-client/blob/master/files/STRUST_Certificate_Import.jpg)
+![STRUST Certificate Import](https://github.com/meplato/store2-abap-client/blob/master/files/STRUST_Certificate_Import.jpg)
 - File
 - Select the certificate:  
-![STRUST Certificate Import File](/meplato/store2-abap-client/blob/master/files/STRUST_Certificate_Import_File.jpg)
+![STRUST Certificate Import File](https://github.com/meplato/store2-abap-client/blob/master/files/STRUST_Certificate_Import_File.jpg)
 - Execute (the certificate is displayed at the bottom):  
-![STRUST Certificate](/meplato/store2-abap-client/blob/master/files/STRUST_Certificate.jpg)
+![STRUST Certificate](https://github.com/meplato/store2-abap-client/blob/master/files/STRUST_Certificate.jpg)
 - Add the certificate to the identity "SSL Client (Standard)"\* (Add to certificate list):  
 ![STRUST Certificate Add to List](mimes\STRUST_Certificate_Add_to_List.jpg)
 - Save.
@@ -119,9 +119,9 @@ DESTINATION_CLIENT = /WAME/CL_MSA_FACTORY=>CREATE_DEST_CLIENT(
 ```
 In the RFC destination...
 - set the Target Host to [store.meplato.com](store.meplato.com). You might enter proxy settings if required:  
-![RFC Technical Settings](/meplato/store2-abap-client/blob/master/files/RFC_Technical_Settings.jpg)
+![RFC Technical Settings](https://github.com/meplato/store2-abap-client/blob/master/files/RFC_Technical_Settings.jpg)
 - set the User to your API token and activate SSL. A password is currently not required but please set a dummy one (e.g. a single letter) such that the PW Status changed to "saved" (otherwise the user won't be transmitted). You might set the SSL Certificate to another SSL ID than "SSL Client (Standard)" if required (cf. [Importing the SSL certificate](https://github.com/meplato/store2-abap-client#Importing-the-SSL-certificate)):  
-![RFC Logon Security](/meplato/store2-abap-client/blob/master/files/RFC_Logon_Security.jpg)
+![RFC Logon Security](https://github.com/meplato/store2-abap-client/blob/master/files/RFC_Logon_Security.jpg)
 - You may enter additional settings according to your wishes. However, please double-check with your Meplato contact if they are supported (especially if you wish to use compression).
 
 
@@ -258,8 +258,8 @@ Complete documentation for the Meplato Store 2 REST API can be found at
 
 ## Downloads
 
-- [1.0.1.0.zip](/meplato/store2-abap-client/blob/master/files/1.0.1.0.zip)
-- [Certificate.zip](/meplato/store2-abap-client/blob/master/files/Certificate.zip)
+- [1.0.1.0.zip](https://github.com/meplato/store2-abap-client/blob/master/files/1.0.1.0.zip)
+- [Certificate.zip](https://github.com/meplato/store2-abap-client/blob/master/files/Certificate.zip)
 
 
 # License
